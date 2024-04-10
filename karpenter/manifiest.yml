@@ -1,0 +1,13 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: karpenter
+spec:
+  destination:
+    namespace: karpenter
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: charts/karpenter
+    repoURL: hhttps://github.com/aws/karpenter-provider-aws/
+    targetRevision: v0.20.0
