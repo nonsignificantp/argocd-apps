@@ -9,5 +9,5 @@ spec:
   project: default
   source:
     path: charts/karpenter
-    repoURL: hhttps://github.com/aws/karpenter-provider-aws/
+    repoURL: https://github.com/aws/karpenter-provider-aws/
     targetRevision: v0.20.0
